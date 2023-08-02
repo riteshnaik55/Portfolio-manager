@@ -1,0 +1,129 @@
+html { overflow-x: hidden; }
+
+h1 {
+    color:purple;
+    font-style: normal;
+    font-size: 50px;
+}
+.h1s{
+    text-align: center;
+    
+}
+.h1new{
+    position: relative;
+    left: 43%;
+}
+  
+p {
+    color:navy;
+    font-family: verdana;
+    font-size: 20px;
+}
+
+#h{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 22px;
+    color:rgb(251, 255, 4);
+    border:2px rgb(0, 0, 0) solid;
+    border-radius: 1px;
+    padding: 2px;
+    background-color: rgb(0, 132, 255);
+    text-decoration: none;
+    display: inline-block;
+    width: 150px;
+    text-align: center;
+    line-height: 1.8;
+    border-radius: 15px;
+}
+
+button{ 
+    background-color: greenyellow;
+    width: 200px;
+    color:rgb(255, 255, 0);
+    height: 45px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    font-style: normal;
+    background-color: blueviolet;
+    border-radius: 10px;
+}
+
+#para{
+    color: rgb(251, 255, 4);
+    font-size: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+    padding: 40px;
+}
+
+#f{
+    color:yellow;
+    text-align: center;
+    background-color: darkred;
+    text-decoration: none;
+    border:2px rgb(0, 0, 0) solid;
+    border-radius: 10px;
+    width: 13%;
+    position: relative;
+    left:21%;
+    display: inline-block;
+    line-height: 1.8;
+}
+
+section{
+    background-color:lightgreen;
+    border-radius: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align:center;
+    font-size: 26px;
+    float: left;
+    position: relative;
+    left: 2%;
+    width: 48%;
+}
+
+table { 
+    border: 2px solid #000;
+    border-collapse: separate;
+    border-left: 0;
+    border-radius: 20px;
+    border-spacing: 0px;
+    font-size: 20px;
+    color: black;
+    width: 70%;
+    background-color:lightskyblue
+}
+thead {
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+    border-collapse: separate;
+    border-radius: 20px;
+    text-align: center;
+    background-color:gold
+}
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+th, td {
+    padding: 5px 4px 6px 4px; 
+    text-align: center;
+    vertical-align: center;
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+}
+td {
+    border-top: 1px solid #000;  
+}
+thead:first-child tr:first-child th:first-child, tbody:first-child tr:first-child td:first-child {
+    border-radius: 20px 0 0  0  ;
+}
+thead:last-child tr:last-child th:first-child, tbody:last-child tr:last-child td:first-child {
+    border-radius: 0 0 0  20px;
+}
+input{
+    font-size: 15px;
+    width: 180px;
+}

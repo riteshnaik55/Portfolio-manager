@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/restyle.css">
+</head>
+<body>
+    <h1 align="center">Previous Records</h1>
+    <hr color="black">
+    <h3>Stocks</h3>
+    <table align="center" >
+      <thead>
+        <tr align="center">
+          <th>Name</th>
+          <th>Date</th>
+          <th>Quantity</th>
+          <th>Inv Cost</th>
+          <th style="border-top-right-radius: 20px;">Current Value</th>
+        </tr>
+      </thead>
+      <tbody align="center">
+        <%noteList.forEach(project => {%>
+          <tr>
+              <td><%=project.stockname %></td>
+              <td><%=project.stockdate%></td>
+              <td><%=project.stockquantity%></td>
+              <td><%=project.stockcost%></td>
+              <td><%=project.stocksell%></td>
+          </tr>
+      <%})%>
+      </tbody>
+    </table>
+    <br><br>
+
+
+    <h3>Fixed Income</h3>
+    <table align="center">
+      <thead>
+        <tr align="center">
+          <th>Name</th>
+          <th>Date</th>
+          <th>Amount</th>
+          <th>Time Period</th>
+          <th style="border-top-right-radius: 20px;">Current Value</th>
+        </tr>
+      </thead>
+      <tbody>
+        <%noteList.forEach(project => {%>
+          <tr>
+              <td><%=project.finame %></td>
+              <td><%=project.fidate%></td>
+              <td><%=project.ficp%></td>
+              <td><%=project.fitp%></td>
+              <td></td>
+          </tr>
+      <%})%>
+      </tbody>
+    </table>
+    <br><br>
+
+    <h3>Property</h3>
+    <table align="center">
+      <thead>
+        <tr>
+          <th >Name</th>
+          <th >Date</th>
+          <th >Purchase Price</th>
+          <th  style="border-top-right-radius: 20px;">Current Value</th>
+        </tr>
+      </thead>
+      <tbody>
+        <%noteList.forEach(project => {%>
+          <tr>
+              <td><%=project.pname %></td>
+              <td><%=project.pdate%></td>
+              <td><%=project.pcp%></td>
+              <td><%=project.psp%></td>
+          </tr>
+      <%})%>
+      </tbody>
+    </table>
+    <br><br>
+
+    <h3>Mutual Funds</h3>
+    <table align="center">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Date</th>
+          <th>Inv Amount</th>
+          <th style="border-top-right-radius: 20px;">Sell Value</th>
+        </tr>
+      </thead>
+      <tbody>
+        <%noteList.forEach(project => {%>
+          <tr>
+              <td><%=project.mfname %></td>
+              <td><%=project.mfdate%></td>
+              <td><%=project.mfcp%></td>
+              <td><%=project.mfsp%></td>
+          </tr>
+      <%})%>
+      </tbody>
+    </table>
+    <br><br>
+
+    <h3>Bullion</h3>
+    <table align="center">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Date</th>
+          <th>Quantity</th>
+          <th>Purchase Price</th>
+          <th style="border-top-right-radius: 20px;">Current Value</th>
+        </tr>
+      </thead>
+      <tbody>
+        <%noteList.forEach(project => {%>
+          <tr>
+              <td><%=project.bullname %></td>
+              <td><%=project.bulldate%></td>
+              <td><%=project.bullquantity%></td>
+              <td><%=project.bullcost%></td>
+              <td><%=project.bullsell%></td>
+          </tr>
+      <%})%>
+      </tbody>
+    </table>
+    <br><br>
+
+    <h3>Other Assets</h3>
+    <table align="center">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Date</th>
+          <th>Type</th>
+          <th>Purchase Price</th>
+          <th style="border-top-right-radius: 20px;">Current Value</th>
+        </tr>
+      </thead>
+      <tbody>
+        <%noteList.forEach(project => {%>
+          <tr>
+              <td><%=project.oaname %></td>
+              <td><%=project.oadate%></td>
+              <td><%=project.oatype%></td>
+              <td><%=project.oacost%></td>
+              <td><%=project.oasell%></td>
+          </tr>
+      <%})%>
+      </tbody>
+    </table>
+    <br><br>
+
+    <h3>Other Borrowings</h3>
+    <table align="center">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Date</th>
+          <th style="border-top-right-radius: 20px;">Amount</th>
+        </tr>
+      </thead>
+      <tbody>
+        <%noteList.forEach(project => {%>
+          <tr>
+              <td><%=project.obname %></td>
+              <td><%=project.obdate%></td>
+              <td><%=project.obcp%></td>
+          </tr>
+      <%})%>
+      </tbody>
+    </table>
+    <br><br>
+</body>
+</html>

@@ -1,0 +1,82 @@
+table { 
+    border: 2px solid #000;
+    border-collapse: separate;
+    border-left: 0;
+    border-radius: 20px;
+    border-spacing: 0px;
+    font-size: 20px;
+    color: black;
+    width: 70%;
+    background-color: lightgoldenrodyellow;
+}
+
+body{
+    background-color:lightgreen
+}
+
+thead {
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+    border-collapse: separate;
+    border-radius: 20px;
+    text-align: center;
+    background-color:deepskyblue
+}
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+th, td {
+    padding: 5px 4px 6px 4px; 
+    text-align: center;
+    vertical-align: center;
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+}
+td {
+    border-top: 1px solid #000;  
+}
+thead:first-child tr:first-child th:first-child, tbody:first-child tr:first-child td:first-child {
+    border-radius: 20px 0 0  0  ;
+}
+thead:last-child tr:last-child th:first-child, tbody:last-child tr:last-child td:first-child {
+    border-radius: 0 0 0  20px;
+}
+
+button{
+    color: yellow;
+    width: 150px;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 20px;
+}
+
+.b1{
+    border-left: 4px solid black;
+    height: 110px;
+}
+
+section{
+    border-radius: 10px;
+    font-size: 15px;
+    float: left;
+    position: relative;
+    left: 2%;
+    width: 90%;
+}
+
+h2{
+    /* font-family: "Arial"; */
+    font-size: 30px;
+}
+
+h3{
+    text-align: center;
+    font-size: 25px;
+}
+p{
+    font-size: 20px;
+}
+

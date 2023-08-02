@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Project</title>
+    <script type="text/javascript" src="/js/new.js"></script>
+    <link rel="stylesheet" href="/css/design.css">
+</head>
+<body>
+    <h1 align="center" style="font-size: 50px; font-family: Rockwell;">Portfolio</h1>
+    <hr color="black">
+    <section style="height: 100px;font-size: 25px;width:49.2%;float:left;">
+        &emsp;&emsp;Name: <%=alpha.name%><br><br>
+        <span id="one">&emsp;&emsp;Mobile Number: <%=alpha.mobile%></span>
+    </section>
+    <section style="height: 100px;font-size: 25px;width:1%;float:left;">
+    </section>
+    <section style="height: 100px;font-size: 25px;width:49.2%;float:left;">
+        <span id="one">Month: &emsp;&emsp;<%=alpha.month%></span><br><br>
+        <span id="two">Email-id:&emsp;&emsp;<%=alpha.email%></span>
+    </section>
+    <br><br><br><br><br>
+    <hr color="black"> 
+    
+    <section style="height: 110px;font-size: 25px;font-family:Arial, Helvetica, sans-serif">
+        <br>
+        <span>&emsp;&emsp;Total Net Worth  ➡  Rs. <span><%=alpha.netvalue%></span>&emsp;
+        <span>&emsp;&emsp;&emsp;Assets  ➡  Rs. <span><%=alpha.assets%></span>&emsp;
+        <span>&emsp;&emsp;&emsp;Liablities  ➡  Rs. <span><%=alpha.liab%></span>
+    </section>
+    
+    <hr color="black">
+    <section style=" width: 48%; float: left; min-height:90px;">
+        <h2 style="position: relative; left: 15%;">
+            Investment Cost:&emsp;Rs.  <span><%=alpha.invcost%></span>
+        </h2>
+        <h2 style="position: relative; left: 15%;">
+            Latest Value:&emsp;&emsp;&nbsp;&nbsp;&nbsp;Rs. <span><%=alpha.lastvalue%></span>
+        </h2>
+    </section>
+
+    <section style=" width: 48%; float: left; min-height:90px;">
+    <h2 style="position: relative; left: 15%;">
+        Overall Gain:  &emsp;&emsp;Rs. <span><%=alpha.ovgain%></span>/-
+    </h2>
+    <h2 style="position: relative; left: 15%;">
+        Overall Gain(%):&emsp;<span><%=alpha.ovgper%></span>%
+    </h2>
+    </section>
+
+    <br><br><br><br><br><br>
+    <hr color="black">
+    <h2 align="center" style="font-size: 28px;">Total Investments</h2>
+    
+    <center><button id="b1" onclick="f1()">PieChart</button>
+    <button id="b2" onclick="f2()">Bar Graph</button></center>
+
+    <div id="piechart" style="position: relative; left:5%;height:350px "></div>
+    <center><div id="container" style="height:350px "></div></center>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    
+    <hr color="black">
+
+    <table id="table" align="center" id="table" style="text-align: center; border:1px solid black">
+        <thead>
+        <tr>                                                    <!--Header-->
+            <th></th>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Initial Amount</th>            
+            <th>Date</th>
+            <th style="border-top-right-radius: 20px;">Current Value</th>
+        </tr>
+        </thead>
+
+        <tr id="stock">                                        <!-- Stocks-->
+            <td>Stocks</td>
+            <td><span id='Nostock'><%=alpha.stockname%></span></td>
+            <td>-</td>                              
+            <td><span id='Costock'><%=alpha.stockcost%></span></td>
+            <td><span id='Datestock'><%=alpha.stockdate%></td>
+            <td><span id='Sostock'><%=alpha.stocksell%></td>
+        </tr>
+
+        <tr id="fixedinc">                                      <!--Fixed income-->
+            <td>Fixed Income</td>
+            <td><span id='Noinc'><%=alpha.finame%></td>
+            <td><span id='Toinc'><%=alpha.fitype%></td>                              
+            <td><span id='Aoinc'><%=alpha.ficp%></td>
+            <td><span id='MDoinc'><%=alpha.fidate%></span></td>
+            <td><span id='SDoinc'><%=alpha.fisp%></span></td>
+        </tr>
+
+        <tr id="bullion">                                      <!--Bullion-->
+            <td>Bullion</td>
+            <td><span id='BullName'><%=alpha.bullname%></span></td>
+            <td>-</td>                              
+            <td><span id='BullCost'><%=alpha.bullcost%></span></td>
+            <td><span id='BullDate'><%=alpha.bulldate%></span></td>
+            <td><span id='BullSell'><%=alpha.bullsell%></span></td>
+        </tr>
+
+        <tr id="prop">                                      <!--Property--> 
+            <td>Property</td>
+            <td><span id='Propname'><%=alpha.pname%></td>
+            <td>-</td>                              
+            <td><span id='Costprop'><%=alpha.pcp%></td>
+            <td><span id='Dateprop'><%=alpha.pdate%></td>
+            <td><span id='Sellprop'><%=alpha.psp%></td>
+        </tr>
+
+        <tr id="mf">                                      <!--Property--> 
+            <td>Mutual Funds</td>
+            <td><span id='MFName'><%=alpha.mfname%></td>
+            <td>-</td>                              
+            <td><span id='MFCp'><%=alpha.mfcp%></td>
+            <td><span id='MFDate'><%=alpha.mfdate%></td>
+            <td><span id='MFSp'><%=alpha.mfsp%></td>
+        </tr>
+
+        <tr id="asset">                                    <!--Other Assets-->    
+            <td>Other Assets</td>
+            <td><span id='Noasset'><%=alpha.oaname%></span></td>
+            <td><span id='Toasset'><%=alpha.oatype%></td>                              
+            <td><span id='Coasset'><%=alpha.oacost%></span></td>
+            <td><span id='Doasset'><%=alpha.oadate%></span></td>
+            <td><span id='Soasset'><%=alpha.oasell%></td>
+        </tr>
+
+        <tr id="borrow">                                        
+            <td>Other Borrowings</td>
+            <td><span id='NameBorrow'><%=alpha.obname%></span></td>
+            <td>-</td>                              
+            <td><span id='Soborrow'><%=alpha.obcp%></span></td>
+            <td><span id='Doborrow'><%=alpha.obdate%></td>
+            <td>-</td>
+        </tr>
+    </table>
+    <br>
+    <center>
+        <a href="/table">CLick here to view all records</a>
+    </center>
+    <div id="hide">
+    <hr color="black">
+    <center><button class="b" onclick="f3();window.print()">Print</button><br><br></div></center>
+</body>
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/form.css"
+</head>
+<body >
+    <h1>Form</h1><hr color="black">
+    <form class="container" method="POST" action="/next">
+        
+        <!-- Personal Details -->
+        <h2>Personal Details</h2>
+        <span>&emsp;&emsp;Select month & year :- </span>&emsp;&emsp;
+        <input name="month" type="month" style="width: 240px"/><br><br>
+
+        <span>&emsp;&emsp;Name :- </span>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;
+        <input class="a" name="naming">
+        <br><br>
+        <span>&emsp;&emsp;Mobile :- </span>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;
+        <input class="a" name="mob">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+        <span> Email :- </span>
+        <input class="a" name="email" required>
+
+        <hr color="black">
+
+        <!-- Stocks -->
+        <h2>Stocks</h2>
+        <span>&emsp;&emsp; Name: - </span>
+        <input class="a" name="stockname">
+        <span>&emsp;&emsp;&emsp;&emsp;&emsp; Date: - </span>
+        <input class="a" type="date"  name="stockdate"><br><br>
+        <span>&emsp;&emsp; Quantity: - </span>
+        <input  name="stockquant">
+        <span>&emsp;&emsp;&emsp;&emsp; Purchase Price: - </span>
+        <input  class="b" name="stockip">&emsp;&emsp;&emsp;&emsp;
+        <span>&emsp;&emsp; Current Value: - </span>
+        <input class="b"  name="stockcp">
+        
+        <hr color="black">
+
+        <!-- Fixed Income -->
+        <h2>Fixed Income</h2>
+        
+        <span>&emsp;&emsp;FI Type: </span>
+        <select class="s" name="fitype">
+            <option></option>
+            <option>FD(Fixed Deposit)</option>
+            <option>RD(Recurring Deposit)</option>
+            <option>FRD(Flexible RD)</option>
+            <option>CD(Corporate Deposit)</option>
+            <option>PPF(Public Provident Fund)</option>
+            <option>Other</option>
+        </select>
+        
+        <span>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Bank Name: - </span>
+        <input class="a" name="finame"><br><br>
+        <span>&emsp;&emsp;Initial Price: - </span>
+        <input class="b" name="ficp">
+        <span>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;Start Date: - </span>
+        <input class="a" type="date"  name="fidate"><br><br>
+        <span>&emsp;&emsp;Time Period: - 
+        <input  name="fitp">   yrs.</span>
+        <span>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp; Interest Rate: - 
+        <input  name="fiir">   %</span>
+        
+        <hr color="black">
+
+        <!-- Property -->
+        <h2>Property</h2>
+        <span>&emsp;&emsp;Property Name: - </span>
+        <input class="a" name="pname">
+        <span>&emsp;&emsp;&emsp;&emsp;Date: - </span>
+        <input class="a" type="date"  name="pdate"><br><br>
+        <span>&emsp;&emsp;Purchase Price: - </span>
+        <input class="b" name="pcp">
+        <span>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;Current Price: - </span>
+        <input class="b" name="psp">
+        
+        <hr color="black">
+        
+        <!-- Bullion -->
+        <h2>Bullion</h2>
+        <span>&emsp;&emsp;Select Type: - </span>
+        <select class="s" name="bname">
+            <option></option>
+            <option>Gold</option>
+            <option>Silver</option>
+        </select>
+        <span>&emsp;&emsp;&emsp;&emsp;&emsp;Date: - </span>
+        <input class="a" type="date" name="bdate">
+        <span>&emsp;&emsp;Quantity(gms.): - </span>
+        <input  name="bquant"><br><br>
+        <span>&emsp;&emsp;Purchase Price(per 10grams): - </span>
+        <input class="b" name="bip">
+        <hr color="black">
+
+        <!-- Mutual Fund -->
+        <h2>Mutual Funds</h2>
+        <span>&emsp;&emsp;Scheme Name: - </span>
+        <input class="a" name="mfname"/>
+        <span>&emsp;&emsp;&emsp;&emsp;Date: - </span>
+        <input class="a" type="date" name="mfdate" /><br><br>
+        <span>&emsp;&emsp;Investment Amount: - </span>
+        <input class="b" name="mfcp"/>
+        <span>&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;Sell Value: - </span>
+        <input class="b" name="mfsp"/>      
+                
+        <hr color="black">
+
+        <!-- Other Assets -->
+        <h2>Other Assets</h2>
+        <span>&emsp;&emsp;Select Asset Type : - </span>
+        <select class="s" name="oatype">
+            <option></option>
+            <option>Residential</option>
+            <option>Commercial</option>
+            <option>Agriculture</option>
+            <option>Debt</option>
+            <option>Equity</option>
+            <option>Others</option>
+        </select>
+        <span>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Name: - </span>
+        <input class="a" name="oaname"><br><br>
+        <span>&emsp;&emsp;Date: - </span>
+        <input class="a" type="date"  name="oadate">
+        <span>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Initial Amount: - </span>
+        <input  class="b" name="oaip"><br><br>
+        <span>&emsp;&emsp;Current Value: - </span>
+        <input  class="b" name="oacp">
+        
+        <hr color="black">
+
+        <!-- Other Borrowings -->
+        <h2>Other Borrowings</h2>
+        <span>&emsp;&emsp;Name :- </span>
+        <input  class="a" name="obname"/>
+        <span>&emsp;&emsp;Date :- </span>
+        <input  class="a"type="date"  name="obdate"/>
+        <span>&emsp;&emsp;Amount :- </span>
+        <input  class="b" name="obcp"/>
+        
+        <hr color="black">
+        <br>
+        <center>
+            <button>Save</button>
+        </center>
+
+        <br>
+    </form>
+</body>
+</html>

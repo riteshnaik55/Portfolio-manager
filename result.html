@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en" style="overflow-x: hidden;">
+<head>
+    <title>Mini Project</title>
+    <script type="text/javascript" src="index.js"></script>
+    <link rel="stylesheet" href="restyle.css">
+</head>
+<body style="margin:20px 20px 20px 20px; border:4px solid black; border-radius: 20px;">
+    
+    <h1 align="center" style="font-size: 50px;">Portfolio</h1>
+    <hr color="black">
+    <section style=" height: 90px;font-size: 30px;">
+        <span>&emsp;&emsp;Name: <span id="name"/></span>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+        <span>Month:&emsp;<span id="date"></div></span><br>
+        <span id="one">&emsp;&emsp;Number: <span id="num"/></span>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;
+        <span id="two">&emsp;&emsp;Email-id: <span id="email"/></span>
+    </section>
+    <br><br><br><br><br>
+    <hr color="black">
+
+    <section style="height: 110px;font-size: 28px;font-family:Arial, Helvetica, sans-serif">
+        <br>
+        <span>&emsp;Total Net Worth  ➡  Rs. <span id="N"/></span>&emsp;&emsp;
+        <span>&emsp;Assets  ➡  Rs. <span id="A"/></span>&emsp;&emsp;
+        <span>&emsp;Liablities  ➡  Rs. <span id="L"/></span><br><br>
+    </section>
+    <br><br><br><br><br><br>
+    
+    <hr color="black">
+    <section style=" width: 48%; float: left; min-height:90px;">
+        <h2 style="position: relative; left: 15%;">
+            Investment Cost: Rs.  <span id="IC" />
+        </h2>
+        <h2 style="position: relative; left: 15%;">
+            Investment Value: Rs. <span id="IV" />
+        </h2>
+    </section>
+    <section style="width: 0.5%; float: left; min-height:100px;">
+        <div class="b1"></div>
+    </section>
+
+    <section style=" width: 48%; float: left; min-height:90px;">
+    <h2 style="position: relative; left: 15%;">
+        Overall Gain: Rs. <span id="Overallgain" />
+    </h2>
+    <h2 style="position: relative; left: 15%;">
+        Overall Gain(%): <span id="Overallper" />
+    </h2>
+    </section>
+
+    <br><br><br><br><br><br>
+    <hr color="black">
+
+    <h2 align="center">Total Investments</h2>
+    
+    <div id="piechart" style="position: relative; left:5%;height:350px "></div>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="index.js"></script>
+
+    <hr color="black">
+
+    <table align="center" id="table">
+        <tr>                                                    <!--Header-->
+            <th></th>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Initial Amount</th>            
+            <th>Date</th>
+            <th>Current Value</th>
+        </tr>
+
+        <tr id="stock">                                        <!-- Stocks-->
+            <td>Stocks</td>
+            <td><span id='Nostock'/></td>
+            <td><span id='Qostock'/></td>                              
+            <td><span id='Costock'/></td>
+            <td><span id='Datestock'/></td>
+            <td><span id='Sostock'/></td>
+        </tr>
+
+
+        <tr id="fixedinc">                                      <!--Fixed income-->
+            <td>Fixed Income</td>
+            <td><span id='Noinc'/></td>
+            <td><span id='Toinc'/></td>                              
+            <td><span id='Aoinc'/></td>
+            <td><span id='MDoinc'/></td>
+            <td><span id='SDoinc'/></td>
+        </tr>
+
+        <tr id="bullion">                                      <!--Bullion-->
+            <td>Bullion</td>
+            <td><span id='BullName'/></td>
+            <td>-</td>                              
+            <td><span id='BullCost'/></td>
+            <td><span id='BullDate'/></td>
+            <td><span id='BullSell'/></td>
+        </tr>
+
+        <tr id="prop">                                      <!--Property--> 
+            <td>Property</td>
+            <td><span id='Propname'/></td>
+            <td>-</td>                              
+            <td><span id='Costprop'/></td>
+            <td><span id='Dateprop'/></td>
+            <td><span id='Sellprop'/></td>
+        </tr>
+
+        <tr id="loan">                                       <!--Loan-->
+            <td>Loan</td>
+            <td><span id='LoanName'/></td>
+            <td><span id='LoanType'/></td>                              
+            <td><span id='LoanAmount'/></td>
+            <td>-</td>
+            <td><span id='RateLoan'/></td>
+        </tr>
+
+        <tr id="asset">                                    <!--Other Assets-->    
+            <td>Other Assets</td>
+            <td><span id='Noasset'/></td>
+            <td><span id='Toasset'/></td>                              
+            <td><span id='Coasset'/></td>
+            <td><span id='Doasset'/></td>
+            <td><span id='Soasset'/></td>
+        </tr>
+
+        <tr id="borrow">                                        
+            <td>Other Borrowings</td>
+            <td><span id='NameBorrow'/></td>
+            <td>-</td>                              
+            <td><span id='Soborrow'/></td>
+            <td><span id='Doborrow'/></td>
+            <td>-</td>
+        </tr>
+    </table>
+
+    <div id="print">
+        <hr color="black"> 
+        <br><br>
+        <center><button onclick="hide(),window.print()" style=" border-radius: 10px; font-size: 25px;color: rgb(0, 0, 0);background-color:deepskyblue;">Print</button></center>
+    </div>
+    
+    <br>
+</body>
+</html>
